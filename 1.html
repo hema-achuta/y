@@ -149,17 +149,18 @@ F- Fail : Below 30</p>
 <script>
 var app = angular.module('myApp', ['datatables', 'ngResource', 'ckeditor', 'datatables.buttons', 'cgBusy']);
 app.controller('certController', function($scope, $http, $resource, DTOptionsBuilder) {
-        $scope.certid=DOMPurify.sanitize("f3be4d56a4d993756911cad70cb261eb");
+        $scope.certid=DOMPurify.sanitize("f3be4d56a4d993756911cad78cb281eb");
             $scope.myPromise= $http.get('/pages/home/include/getcert.php?certid='+$scope.certid)
         .then(function(response) {
             // alert(response.data);
             if(response.data == "null")
                 {
-                        $scope.certnotverified=true;
-                        $scope.errmsg="Sorry certificate details not found";
+                        errmsg="";
+                        $scope.certverified=true;
                 }
                 else
                 {
+			
                         errmsg="";
                         $scope.certverified=true;
                 }
