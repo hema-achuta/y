@@ -139,7 +139,7 @@ B- Good : 60-69<br></p>
 <p>C- Fair : 50-59<br>
 D- Avarage : 40-49<br>
 P- Pass : 30-39<br>
-F- Fail : Bellow 30</p>
+F- Fail : Below 30</p>
 	</div>
 	</div>
   </div>
@@ -161,7 +161,6 @@ app.controller('certController', function($scope, $http, $resource, DTOptionsBui
                 else
                 {
                         errmsg="";
-                        $scope.cert=response.data;
                         $scope.certverified=true;
                 }
         })
