@@ -8,7 +8,7 @@ This is a Django web application designed to assist law enforcement agencies in 
 
 1. Clone the repository to your local machine:
    ```
-   git clone <repository-url>
+   git clone <https://github.com/hema-achuta/Crime-Person-Location>
    ```
 
 2. Navigate to the project directory:
